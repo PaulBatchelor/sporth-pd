@@ -11,8 +11,8 @@ The plugin has the following limitations:
 
 To compile:
 
-1. Clone the [pure-data](https://www.github.com/pure-data/pure-data) repo.
-2. Clone this repo inside the pure-data directory.
-3. Inside the sporth-pd directory, run "make". 
-4. Make sure things work with "sporth test.sp". If all is well, a 5-second
-audio file called "test.wav" should contain some blippy sounds. 
+1. Clone this rep.
+2. Grab the submodules with "git submodule init" and "git submodule update".
+3. Run "make"
+4. Test out the program with "sporth test.sp". This should generate a 5 second
+audio file called "test.wav", which plays sinusoidal blips!
