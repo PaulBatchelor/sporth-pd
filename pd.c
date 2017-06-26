@@ -21,7 +21,6 @@ static int sporth_pd(plumber_data *pd, sporth_stack *stack, void **ud)
     const char *filename;
     switch(pd->mode) {
         case PLUMBER_CREATE:
-            fprintf(stderr, "Creating our custom gain plugin!\n");
             if(sporth_check_args(stack, "s") != SPORTH_OK) {
                 plumber_print(pd,"Not enough arguments for pd\n");
                 stack->error++;

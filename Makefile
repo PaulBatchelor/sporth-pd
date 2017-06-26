@@ -1,4 +1,5 @@
-CFLAGS = -I../src -fPIC -rdynamic -g 
+PDPATH ?= pure-data
+CFLAGS = -I$(PDPATH)/src -fPIC -rdynamic -g 
 CFLAGS += -O2 -ffast-math -funroll-loops -fomit-frame-pointer -fPIC \
 		  -DPD
 
