@@ -1,0 +1,24 @@
+#N canvas 913 47 451 700 10;
+#X obj 92 288 dac~;
+#X obj 103 195 osc~ 440;
+#X obj 131 242 *~ 0.3;
+#X msg 202 136 \; pd dsp 1;
+#X obj 149 58 loadbang;
+#X obj 244 369 print;
+#X obj 237 314 random 400;
+#X obj 237 345 + 400;
+#X obj 217 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 302 172 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 268 254 metro 100;
+#X connect 1 0 2 0;
+#X connect 2 0 0 0;
+#X connect 2 0 0 1;
+#X connect 4 0 3 0;
+#X connect 4 0 9 0;
+#X connect 6 0 7 0;
+#X connect 7 0 1 0;
+#X connect 8 0 6 0;
+#X connect 9 0 10 0;
+#X connect 10 0 8 0;
