@@ -7,7 +7,7 @@ CFLAGS += -DHAVE_LIBDL=1 -DHAVE_UNISTD_H
 CFLAGS += -DUSEAPI_DUMMY
 include obj.mk
 
-LDFLAGS = -lm -ldl -lportaudio 
+LDFLAGS = -lm -ldl 
 
 default: pd.so
 

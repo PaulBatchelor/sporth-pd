@@ -37,7 +37,6 @@ OBJ=\
  $(PDPATH)/src/x_array.o \
  $(PDPATH)/src/s_utf8.o \
  $(PDPATH)/src/g_hdial.o \
- $(PDPATH)/src/s_audio_pa.o \
  $(PDPATH)/src/g_traversal.o \
  $(PDPATH)/src/s_main.o \
  $(PDPATH)/src/x_text.o \

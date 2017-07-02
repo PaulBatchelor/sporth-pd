@@ -38,16 +38,12 @@ static int sporth_pd(plumber_data *pd, sporth_stack *stack, void **ud)
             foo->counter = 0;
             pd_init();
             sys_printtostderr = 1;
-            sys_verbose = 1;
             foo->pd = glob_evalfile(NULL, gensym(filename), gensym("./"));
             sched_set_using_audio(SCHED_AUDIO_CALLBACK);
             sys_setchsr(0, 1, pd->sp->sr);
             STUFF->st_time_per_dsp_tick = (TIMEUNITPERSECOND) *
                 ((double)STUFF->st_schedblocksize) / STUFF->st_dacsr; 
             sporth_stack_push_float(stack, 0.0);
-            plumber_print(pd, "dac size is %d chan: %d sr: %g\n", 
-                    STUFF->st_schedblocksize, STUFF->st_outchannels,
-                    STUFF->st_dacsr);
             break;
 
         case PLUMBER_COMPUTE:
